@@ -1,6 +1,6 @@
 # EfficientNet-Unet structure
 
-![eff_unet-2](https://user-images.githubusercontent.com/48679574/75096304-bb80bb80-55e1-11ea-9b6d-a2b8a3be73f5.jpg)
+![eff_unet-2 2](https://user-images.githubusercontent.com/48679574/75096355-2b8f4180-55e2-11ea-87ce-a8bb96f95918.JPG)
 
 
 # Result prediction
