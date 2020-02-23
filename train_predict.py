@@ -1,6 +1,7 @@
 from google.colab import drive
 drive.mount('/content/drive')
 
+
 import numpy as np
 import matplotlib.pyplot as plt
 from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
@@ -14,12 +15,12 @@ from EfficientUnet.efficientnet import get_efficientnet_b5_encoder
 
 from sklearn.metrics import mean_absolute_error
 from skimage.measure import compare_ssim, compare_psnr
+
+
 def measurement(func, **kwargs):
     val = func(kwargs["img1"], kwargs["img2"])
     print(val)
     return val
-
-
 
 
 def evaluate(model, test_X, test_met, test_sat, test_Y):
