@@ -21,7 +21,7 @@ https://trafalbad.hatenadiary.jp/entry/2020/02/23/094850
 
 
 
-# requirements for FPA and hyper column
+# requirements for FPA and hypercolumn
 
 <b>FPA</b>
 
