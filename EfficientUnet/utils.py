@@ -9,6 +9,7 @@ import numpy as np
 GlobalParams = namedtuple('GlobalParams', ['batch_norm_momentum', 'batch_norm_epsilon', 'dropout_rate', 'num_classes',
                                            'width_coefficient', 'depth_coefficient', 'depth_divisor', 'min_depth',
                                            'drop_connect_rate'])
+
 GlobalParams.__new__.__defaults__ = (None,) * len(GlobalParams._fields)
 
 BlockArgs = namedtuple('BlockArgs', ['kernel_size', 'num_repeat', 'input_filters', 'output_filters', 'expand_ratio',
