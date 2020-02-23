@@ -21,11 +21,11 @@ https://trafalbad.hatenadiary.jp/entry/2020/02/23/094850
 
 
 
-# requirements for FPA and hypercolumn
+# Requirements for FPA and hypercolumn
 
 <b>FPA</b>
 
-・image size are more than 256 
+・Image size are more than 256 
 
 ・Amount of calculation increase
 
@@ -35,4 +35,4 @@ https://trafalbad.hatenadiary.jp/entry/2020/02/23/094850
 If you use multi input,  using convolution layers output which are contrast position in model often get better practice.
 
 
-hypercolumn about better practice should be refered to [Convolutional hypercolumns in Python](http://blog.christianperone.com/2016/01/convolutional-hypercolumns-in-python/)
+Hypercolumn about better practice should be refered to [Convolutional hypercolumns in Python](http://blog.christianperone.com/2016/01/convolutional-hypercolumns-in-python/)
