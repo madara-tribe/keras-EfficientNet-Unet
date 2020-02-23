@@ -35,4 +35,4 @@ https://trafalbad.hatenadiary.jp/entry/2020/02/23/094850
 If you use multi input,  using convolution layers output which are contrast position in model often get better practice.
 
 
-hypercolumn about better practice is reffer to [Convolutional hypercolumns in Python](http://blog.christianperone.com/2016/01/convolutional-hypercolumns-in-python/)
+hypercolumn about better practice should be refered to [Convolutional hypercolumns in Python](http://blog.christianperone.com/2016/01/convolutional-hypercolumns-in-python/)
