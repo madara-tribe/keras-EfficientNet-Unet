@@ -89,14 +89,14 @@ def _get_efficient_unet(encoder, met_shape, sat_shape, out_channels=24,
 
     input_ = encoder.input
     head = encoder.get_layer('head_swish').output
+    if fpa is not None:
+        head = Feature_Pyramid_Attention(head).FPA()
     blocks = [input_] + MBConvBlocks + [head]
     
     # block type
     UpBlock = Conv2DTranspose_block
     
     o = blocks.pop()
-    if fpa is not None:
-        o = Feature_Pyramid_Attention(o).FPA()
     o = UpBlock(512, initializer=conv_kernel_initializer, skip=blocks.pop(), met_input=met_input, sat_input=sat_input)(o)
     d5 = interpolation(o, 16)
     o = UpBlock(256, initializer=conv_kernel_initializer, skip=blocks.pop(), met_input=met_input, sat_input=sat_input)(o)
