@@ -29,6 +29,7 @@ mean_absolute_error loss (it focus on how similar images are)
 
 ## ・NN architecture
 
+<img src="https://user-images.githubusercontent.com/48679574/93949013-d6373080-fd7a-11ea-983b-8c760660ad46.png" width="600px">
 
 ## datasets
 Input data　　　　　　　　mask data
