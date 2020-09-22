@@ -1,0 +1,45 @@
+### common
+train 10 val 10
+ep 200
+batch 5
+(256, 256, 3) (256, 256,3)
+####
+0~1 mean_squared_error
+sigmoid
+opt is
+==> sgd = keras.optimizers.SGD(lr=1E-2, decay=5**(-4), momentum=0.9, nesterov=True)
+
+==> not Adam
+###
+total mae 11987.84150562602
+total psnr 20.653574567505867
+total maes 0.060973314949676616
+
+
+###
+0~1 mean_squared_error sgd
+softmax
+###
+
+total mae 37324.16010558849
+total psnr 12.546647772480549
+total maes 0.18984049532871747
+
+=> not softmax but sigmoid
+
+###
+0~1 mean_squared_error
+sigmoid sgd
+
++fpa
+###
+
+NG fpa(become but accuracy))
+
+###
+0~1 mean_squared_error
+sigmoid sgd
+psplayer's metainput (0, 0.50.75,1==0~1)
+###
+
+
