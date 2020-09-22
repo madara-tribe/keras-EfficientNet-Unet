@@ -1,4 +1,4 @@
-Parameters
+# Parameters
 ・正規化0~1
 ・size (256, 256,3) or (128,128,3)
 ・sigmoid
@@ -6,7 +6,7 @@ Parameters
 ・optimizer=SGD
 
 
-not better tecs
+## not better tecs
 ・huber loss
 ・hypercolumn
 ・dice loss
@@ -14,29 +14,31 @@ not better tecs
 
 
 
-・Important  parameter
+## ・Important  parameter
 mean_absolute_error loss (it focus on how similar images are)
 
 
-・NN architecture
+## ・NN architecture
 
 
+## datasets
 Input data　　　　　　　　mask data
 
 
+
+# Model Performance
+
+## loss curve
 train-Loss, validation-loss curve
 
 
-Validation data Prediction
+## Prediction
 
 Ground Truth   model prediction
 
 
-reffered sites
+## reffered sites
 
- http://phalanks.hatenablog.jp/entry/2018/12/23/195354
-  ・[最新論文]NVIDIAさんがまた本気を出してしまった。
-https://qiita.com/Phoeboooo/items/ad6c0461ab052aae8e89
- 
-・【画像生成】AutoencoderでDenoising, Coloring, そして拡大カラー画像生成
-https://qiita.com/MuAuan/items/e5f3e67ee24a776380aa
+- [NVIDIA SPADE](https://qiita.com/Phoeboooo/items/ad6c0461ab052aae8e89)
+- [Kaggle奮闘記 〜塩コンペ編〜](http://phalanks.hatenablog.jp/entry/2018/12/23/195354)
+- [AutoencoderでDenoising, Coloring, そして拡大カラー画像生成](https://qiita.com/MuAuan/items/e5f3e67ee24a776380aa)
