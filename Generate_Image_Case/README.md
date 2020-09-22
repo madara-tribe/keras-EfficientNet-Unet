@@ -1,15 +1,24 @@
 # Parameters
-・正規化0~1
+
+・pixel value range 0~1
+
 ・size (256, 256,3) or (128,128,3)
+
 ・sigmoid
+
 ・loss=MAE
+
 ・optimizer=SGD
 
 
 ## not better tecs
+
 ・huber loss
+
 ・hypercolumn
+
 ・dice loss
+
 ・Feature Pyramid Attention
 
 
