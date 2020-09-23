@@ -56,7 +56,10 @@ train-Loss, validation-loss curve
 
 ## Prediction
 
-Ground Truth   model prediction
+<b>Ground Truth  / model prediction</b>
+
+<img src="https://user-images.githubusercontent.com/48679574/93964286-38ebf480-fd9a-11ea-8448-3b5911533967.png" width="400px"><img src="https://user-images.githubusercontent.com/48679574/93964301-40ab9900-fd9a-11ea-820c-243f312cc260.png" width="400px">
+
 
 
 ## reffered sites
