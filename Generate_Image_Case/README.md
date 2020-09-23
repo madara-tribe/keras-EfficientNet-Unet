@@ -38,9 +38,9 @@ mean_absolute_error loss (it focus on how similar images are)
 
 
 # datasets
-Input data　　　　　　　　mask data
+<b>Input data / mask data</b>
 
-
+<img src="https://user-images.githubusercontent.com/48679574/93950459-835f7800-fd7e-11ea-8637-8c4da1d704df.png" width="400px"><img src="https://user-images.githubusercontent.com/48679574/93950315-282d8580-fd7e-11ea-90f9-a903d8ecedb8.png" width="400px">
 
 
 
