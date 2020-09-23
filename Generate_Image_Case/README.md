@@ -11,7 +11,9 @@
 ・optimizer=SGD
 
 
-## not better tecs
+
+
+# not better tecs
 
 ・huber loss
 
@@ -23,16 +25,24 @@
 
 
 
-## ・Important  parameter
+# ・Important  parameter
 mean_absolute_error loss (it focus on how similar images are)
 
 
-## ・NN architecture
+
+
+# ・NN architecture
 
 <img src="https://user-images.githubusercontent.com/48679574/93949013-d6373080-fd7a-11ea-983b-8c760660ad46.png" width="600px">
 
-## datasets
+
+
+# datasets
 Input data　　　　　　　　mask data
+
+
+
+
 
 
 
