@@ -58,7 +58,8 @@ def load_model(H):
 
     encoder = get_efficientnet_b5_encoder(input_shape, pretrained=False)
     model = _get_efficient_unet(encoder, out_channels=out_channels, 
-                              concat_input=True, fpa=None, hypercolumn=None)
+                          concat_input=True, fpa=None, hypercolumn=None)
+ sgd = keras.optimizers.SGD(lr=1E-2, decay=5**(-4), momentum=0.9, nesterov=True)
     model.compile(loss='mean_absolute_error', optimizer=Adam(lr=0.001))
     model.summary()
     return model
