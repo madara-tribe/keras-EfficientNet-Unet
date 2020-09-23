@@ -51,6 +51,8 @@ mean_absolute_error loss (it focus on how similar images are)
 ## loss curve
 train-Loss, validation-loss curve
 
+<img src="https://user-images.githubusercontent.com/48679574/93953140-9295f400-fd85-11ea-8fc0-c5b5c55698c4.png" width="400px">
+
 
 ## Prediction
 
