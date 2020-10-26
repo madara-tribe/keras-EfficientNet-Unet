@@ -1,9 +1,6 @@
-from keras.layers import GlobalAveragePooling2D, Reshape, Dense, multiply, add, Permute, Conv2D
+from keras.layers import *
 from keras import backend as K
 
-TF = False
-def _tensor_shape(tensor):
-    return getattr(tensor, '_shape_val') if TF else getattr(tensor, '_keras_shape')
 
 def squeeze_excite_block(input, ratio=16):
     ''' Create a channel-wise squeeze-excite block
@@ -19,7 +16,7 @@ def squeeze_excite_block(input, ratio=16):
     '''
     init = input
     channel_axis = 1 if K.image_data_format() == "channels_first" else -1
-    filters = init._keras_shape[channel_axis]
+    filters = init.shape[channel_axis]
     se_shape = (1, 1, filters)
 
     se = GlobalAveragePooling2D()(init)
@@ -30,7 +27,7 @@ def squeeze_excite_block(input, ratio=16):
     if K.image_data_format() == 'channels_first':
         se = Permute((3, 1, 2))(se)
 
-    x = multiply([init, se])
+    x = Multiply()([init, se])
     return x
 
 
@@ -49,7 +46,7 @@ def spatial_squeeze_excite_block(input):
     se = Conv2D(1, (1, 1), activation='sigmoid', use_bias=False,
                 kernel_initializer='he_normal')(input)
 
-    x = multiply([input, se])
+    x = Multiply()([input, se])
     return x
 
 
@@ -70,6 +67,6 @@ def channel_spatial_squeeze_excite(input, ratio=16):
     cse = squeeze_excite_block(input, ratio)
     sse = spatial_squeeze_excite_block(input)
 
-    x = add([cse, sse])
+    x = Add()([cse, sse])
     return x
 
